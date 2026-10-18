@@ -315,6 +315,7 @@
       box-shadow:0 6px 20px rgba(0,0,0,.22);max-width:250px;display:none}
     .mozo-mesa{font:500 12px/1 system-ui,sans-serif;color:#fff;background:rgba(0,0,0,.55);border-radius:999px;padding:5px 10px}
 
+
   body.con-pedido .mozo-fab{ bottom:80px; }
 </style>
 </head>
@@ -328,6 +329,7 @@
       <button class="mozo-btn sec" id="mozoCuenta" onclick="llamar('cuenta')">🧾 <span>Pedir la cuenta</span></button>
       <button class="mozo-btn" id="mozoMozo" onclick="llamar('mozo')">🔔 <span>Llamar al mozo</span></button>
     </div>
+
 
 
 <div class="foto-grande" id="fotoGrande" onclick="this.classList.remove('on')"><img alt=""></div>
@@ -410,8 +412,8 @@
           <div class="fila" data-id="x7pu3os">
             <div class="fnom"><span class="nom"><span>Orange Coffee</span></span></div><span class="dots"></span><span class="precio" data-p="6000"><s class="antes"></s><span class="val">$6.000</span></span>
           </div>
-          <div class="fila" data-id="tpobj7z">
-            <div class="fnom"><span class="nom"><span>Exprimido NARANJA</span></span></div><span class="dots"></span><span class="precio" data-p="3500"><s class="antes"></s><span class="val">$3.500</span></span>
+          <div class="fila agotado" data-id="tpobj7z">
+            <div class="fnom"><span class="nom"><span>Exprimido NARANJA</span> <span class="ag">agotado</span></span></div><span class="dots"></span><span class="precio" data-p="3500"><s class="antes"></s><span class="val">$3.500</span></span>
           </div>
           <div class="fila" data-id="uuyri2f">
             <div class="fnom"><span class="nom"><span>Cortado jarrita</span></span></div><span class="dots"></span><span class="precio" data-p="3500"><s class="antes"></s><span class="val">$3.500</span></span>
@@ -1034,11 +1036,11 @@
           <div class="fila" data-id="7oxhj6e">
             <div class="fnom"><span class="nom"><span>VINO AVATAR MALBEC</span></span></div><span class="dots"></span><span class="precio" data-p="15000"><s class="antes"></s><span class="val">$15.000</span></span>
           </div>
-          <div class="fila" data-id="gt67t75">
-            <div class="fnom"><span class="nom"><span>VINO ESCORADO MALBEC</span></span></div><span class="dots"></span><span class="precio" data-p="16000"><s class="antes"></s><span class="val">$16.000</span></span>
+          <div class="fila agotado" data-id="gt67t75">
+            <div class="fnom"><span class="nom"><span>VINO ESCORADO MALBEC</span> <span class="ag">agotado</span></span></div><span class="dots"></span><span class="precio" data-p="16000"><s class="antes"></s><span class="val">$16.000</span></span>
           </div>
-          <div class="fila" data-id="o6rtm9v">
-            <div class="fnom"><span class="nom"><span>VINO KAIKEN MALBEC/CABERNET</span></span></div><span class="dots"></span><span class="precio" data-p="21000"><s class="antes"></s><span class="val">$21.000</span></span>
+          <div class="fila agotado" data-id="o6rtm9v">
+            <div class="fnom"><span class="nom"><span>VINO KAIKEN MALBEC/CABERNET</span> <span class="ag">agotado</span></span></div><span class="dots"></span><span class="precio" data-p="21000"><s class="antes"></s><span class="val">$21.000</span></span>
           </div>
           <div class="fila" data-id="7e30j1f">
             <div class="fnom"><span class="nom"><span>VINO LAS PIEDRAS</span></span></div><span class="dots"></span><span class="precio" data-p="15000"><s class="antes"></s><span class="val">$15.000</span></span>
@@ -1046,11 +1048,11 @@
           <div class="fila" data-id="8p214rw">
             <div class="fnom"><span class="nom"><span>VINO NAZARENO MALBEC</span></span></div><span class="dots"></span><span class="precio" data-p="28000"><s class="antes"></s><span class="val">$28.000</span></span>
           </div>
-          <div class="fila" data-id="58ju1ma">
-            <div class="fnom"><span class="nom"><span>VINO SIN RODEO</span></span></div><span class="dots"></span><span class="precio" data-p="14000"><s class="antes"></s><span class="val">$14.000</span></span>
+          <div class="fila agotado" data-id="58ju1ma">
+            <div class="fnom"><span class="nom"><span>VINO SIN RODEO</span> <span class="ag">agotado</span></span></div><span class="dots"></span><span class="precio" data-p="14000"><s class="antes"></s><span class="val">$14.000</span></span>
           </div>
-          <div class="fila" data-id="z5svu42">
-            <div class="fnom"><span class="nom"><span>VINO TRASAMOR</span></span></div><span class="dots"></span><span class="precio" data-p="15000"><s class="antes"></s><span class="val">$15.000</span></span>
+          <div class="fila agotado" data-id="z5svu42">
+            <div class="fnom"><span class="nom"><span>VINO TRASAMOR</span> <span class="ag">agotado</span></span></div><span class="dots"></span><span class="precio" data-p="15000"><s class="antes"></s><span class="val">$15.000</span></span>
           </div>
           <div class="fila" data-id="t6oltrs">
             <div class="fnom"><span class="nom"><span>VINO TONEL 14</span></span></div><span class="dots"></span><span class="precio" data-p="15000"><s class="antes"></s><span class="val">$15.000</span></span>
@@ -1085,8 +1087,8 @@
           <div class="fila" data-id="yui78ic">
             <div class="fnom"><span class="nom"><span>VINO TINTO IMPACIENTE MALBEC</span></span></div><span class="dots"></span><span class="precio" data-p="18000"><s class="antes"></s><span class="val">$18.000</span></span>
           </div>
-          <div class="fila" data-id="xy0l4is">
-            <div class="fnom"><span class="nom"><span>VINO TINTO EDELMIRA MALBEC</span></span></div><span class="dots"></span><span class="precio" data-p="24000"><s class="antes"></s><span class="val">$24.000</span></span>
+          <div class="fila agotado" data-id="xy0l4is">
+            <div class="fnom"><span class="nom"><span>VINO TINTO EDELMIRA MALBEC</span> <span class="ag">agotado</span></span></div><span class="dots"></span><span class="precio" data-p="24000"><s class="antes"></s><span class="val">$24.000</span></span>
           </div>
           <div class="fila" data-id="7p20f1q">
             <div class="fnom"><span class="nom"><span>VINO DESDEN BLANCO</span></span></div><span class="dots"></span><span class="precio" data-p="16000"><s class="antes"></s><span class="val">$16.000</span></span>
@@ -1400,6 +1402,7 @@
     });
   }
   mostrarMesa();
+
 
 </script>
 </body>
